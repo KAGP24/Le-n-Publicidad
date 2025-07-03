@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
       logoutBtn.addEventListener("click", function () {
         localStorage.clear();
         alert("Sesión cerrada con éxito.");
-        window.location.href = "Inicio sesion.html";
+        window.location.href = "index.html";
       });
     }
   });
