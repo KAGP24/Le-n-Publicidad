@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+        <!--Boostrap VidProfe-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- MDB icon -->
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <!-- Google Fonts Roboto -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/mdb.min.css" />
+      <!--Stilo mio-->
+      <link rel="stylesheet" href="css/Estilo2.css">
+      <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!--Barra de Busqueda-->
+<header>
+    <nav class="navbar navbar-expand-sm" style="background-color: gold; box-shadow: 0px 0px 10px rgb(0, 0, 0); font-family:Georgia, 'Times New Roman', Times, serif;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="Contactanos.html">
+            <img src="img/Logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top" style="display: flex;  justify-content: space-between; align-items: center;"> 
+            <h1 class="Leon">León Publicidad</h1>
+          </a>
+        </div>
+      <div style="font-size: 20px;" class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Soporte
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Contactanos.html">Contactanos</a></li>
+                <li><a class="dropdown-item" href="QuienesSomos.html">¿Quienes Somos?</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Inicio sesion.html">Iniciar Sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+              <a href="#" id="logoutBtn" class="btn-logout">Cerrar Sesión</a>
+    </nav>
+</header>
+  
+    <!--Centro pagina-->
+    <body class="d-flex flex-column min-vh-100">          <div class="container-items">
+        <div class="item">
+  <div class="section-title text-center my-5">
+  <h4 class="display-5 fw-bold text-uppercase" style="color: #ffffff;">Contáctanos</h4>
+  <p>Cuéntanos en que te podemos ayudar.</p>
+</div>
+      <main class="flex-grow-1">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="contact-section">
+                      <h3 class="section-title highlight-hover">Números Telefónicos</h3>
+                      <div class="contact-info">
+                          <p><i class="fas fa-phone-alt"></i> +58-412-7033236 </p>
+                          <p><i class="fas fa-mobile-alt"></i> +58-424-7765990</p>
+                      </div>
+  
+                      <h3 class="section-title highlight-hover">Ubicación</h3>
+                      <div class="contact-info">
+                          <p><i class="fas fa-map-marker-alt"></i> Guásimos - Estado Táchira - Venezuela</p>
+                      </div>
+  
+                      <h3 class="section-title highlight-hover">Horarios</h3>
+                      <div class="contact-info">
+                          <p><i class="far fa-clock"></i> Lun - Vie ___ 9 am - 10 pm</p>
+                          <p><i class="fas fa-lock"></i> Sáb. Dom ___ Cerrado</p>
+                      </div>
+                  </div>
+              </div>
+  
+<div class="col-lg-6">
+  <div class="contact-section">
+    <h3 class="section-title highlight-hover">Envíanos un Mensaje</h3>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email..." required>
+        <div class="invalid-feedback">Por favor ingrese un email válido</div>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto..." required>
+        <div class="invalid-feedback">Por favor ingrese un asunto</div>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
+        <div class="invalid-feedback">Por favor ingrese un mensaje</div>
+      </div>
+
+      <button type="submit" class="btn btn-submit highlight-hover">Enviar</button>
+    </form>
+
+    <!-- Confirmación personalizada -->
+    <div id="confirmBox" style="display:none; margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
+      <p>Estás a punto de ser redirigido a WhatsApp para enviar tu mensaje. ¿Deseas continuar?</p>
+      <button id="confirmYes" class="btn btn-success">Sí, enviar</button>
+      <button id="confirmNo" class="btn btn-danger">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let whatsappURL = "";
+
+  // Función para obtener parámetros de la URL
+  function getParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name) || "";
+  }
+
+  // Al cargar la página, rellenar los campos si hay datos en la URL
+  window.addEventListener("DOMContentLoaded", function () {
+    const email = getParam("email");
+    const subject = getParam("subject");
+    const message = getParam("message");
+
+    if (email) document.getElementById("email").value = decodeURIComponent(email);
+    if (subject) document.getElementById("subject").value = decodeURIComponent(subject);
+    if (message) document.getElementById("message").value = decodeURIComponent(message);
+  });
+
+  // Manejo del formulario
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const phoneNumber = "584127033236";
+    const rawMessage = `Nuevo mensaje desde el formulario web:\nEmail: ${email}\nAsunto: ${subject}\nMensaje: ${message}`;
+    const encodedMessage = encodeURIComponent(rawMessage);
+    whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Mostrar confirmación personalizada
+    document.getElementById("confirmBox").style.display = "block";
+  });
+
+  // Confirmar envío
+  document.getElementById("confirmYes").addEventListener("click", function() {
+    window.open(whatsappURL, "_blank");
+    document.getElementById("contactForm").reset();
+    document.getElementById("confirmBox").style.display = "none";
+  });
+
+  // Cancelar envío
+  document.getElementById("confirmNo").addEventListener("click", function() {
+    document.getElementById("confirmBox").style.display = "none";
+  });
+</script>
+
+
+
+
+                <div class="container-items">
+        <div class="item">
+  <div class="section-title text-center my-5">
+  <h2 class="display-5 fw-bold text-uppercase" style="color: #ffffff;">
+    <i></i> -Desarrolladores Web-
+  </h2>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-12 col-md-6 d-flex align-items-center mb-4">
+      <div class="d-flex align-items-center w-100">
+        <div class="rounded-circle overflow-hidden me-3" style="width: 150px; height: 150px;">
+          <img src="img/Klynnr_G.jpeg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="Franela">
+        </div>
+        <div>
+          <h4 class="mb-1">Klynnr_G</h4>
+          <p class="mb-0">Programador Web</p>
+          <a href="https://wa.me/584127033236?text=Hola! Estoy interesado en su trabajo de desarrollo Web."><p style="text-decoration: none; color: yellow; font-size: 25px;">Contactar</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-md-6 d-flex align-items-center mb-4">
+      <div class="d-flex align-items-center w-100">
+        <div class="rounded-circle overflow-hidden me-3" style="width: 150px; height: 150px;">
+          <img src="img/Mervxng.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="Short">
+        </div>
+        <div>
+          <h4 class="mb-1">Mxrvgn_J</h4>
+          <p class="mb-0">Programador Web</p>
+          <a href="https://wa.me/584122896628?text=Hola! Estoy interesado en su trabajo de desarrollo Web."><p style="text-decoration: none; color: yellow; font-size: 25px;">Contactar</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-md-6 d-flex align-items-center mb-4">
+      <div class="d-flex align-items-center w-100">
+        <div class="rounded-circle overflow-hidden me-3" style="width: 150px; height: 150px;">
+          <img src="img/Avila.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="Camisa">
+        </div>
+        <div>
+          <h4 class="mb-1">Angel_A</h4>
+          <p class="mb-0">Programador Web</p>
+          <a href="https://wa.me/584127677540?text=Hola! Estoy interesado en su trabajo de desarrollo Web."><p style="text-decoration: none; color: yellow; font-size: 25px;">Contactar</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-12 col-md-6 d-flex align-items-center mb-4">
+      <div class="d-flex align-items-center w-100">
+        <div class="rounded-circle overflow-hidden me-3" style="width: 150px; height: 150px;">
+          <img src="img/Gbrl.jpg" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" alt="Banderines">
+        </div>
+        <div>
+          <h4 class="mb-1">Gabriel_G</h4>
+          <p class="mb-0">Programador Web</p>
+          <a href="https://wa.me/584247762564?text=Hola! Estoy interesado en su trabajo de desarrollo Web."><p style="text-decoration: none; color: yellow; font-size: 25px;">Contactar</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+            <!--footer pie de página-->
+            <footer class="bg-body-tertiary text-center py-0">
+              <!-- Grid container -->
+              <div class="container p-0 pb-0">
+
+                <section class="mb-2">
+                  <!-- Whatsaap -->
+                  <a
+                    data-mdb-ripple-init
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #00b600;"
+                    href="https://wa.link/pxjy1g"
+                    role="button"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                  <!-- Instagram -->
+                  <a
+                    data-mdb-ripple-init
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #ff00ff;"
+                    href="https://www.instagram.com/leonpublicidadd/"
+                    role="button"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </section>
+              </div>
+              <!-- Grid container -->
+            
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: gold; box-shadow: 0px 0px 10px rgb(0, 0, 0); font-family: Georgia, 'Times New Roman', Times, serif;">
+                <a class="text-body" href="index.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"> © 2025 Copyright: León Publicidad</a>
+              </div>
+              <!-- Copyright -->
+      </footer>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", function () {
+        localStorage.clear(); // o removeItem("user_name")
+        alert("Sesión cerrada con éxito.");
+        window.location.href = "Inicio sesion.html";
+      });
+    }
+  });
+</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
