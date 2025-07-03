@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  box-sizing: border-box;
+
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #b1b1b1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  background-color: transparent;
+}
+
+
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hero-text button {
+  background-color: #999999;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.hero-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

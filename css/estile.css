@@ -1,0 +1,223 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.none{
+    text-decoration: none;
+    color: #000000;
+}
+.none1{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffea00;
+    padding: 18px;
+    margin: 25px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.Leon{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffee00;
+}
+.main{ 
+    padding: 13%;
+    min-height: 100vh;
+    background-image: url(./Fondo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-decoration: none;
+
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0 20px;
+    text-align: center;
+    box-shadow: 0px 0px 25px #ffee00;
+    text-decoration: none;
+}
+nav{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.nav_list{
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+.nav_item{
+    display: inline;
+    text-decoration: none;
+}
+.nav_link{
+    text-decoration: none;
+    color: #ffee00;
+    font-weight: bold;
+}
+.subtitle{
+    color: #000000;
+    text-align: left;
+    text-align: center;
+    padding: 0px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 200px auto;
+}
+.title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: 400px;
+    height: 30px;
+    background-color: #ffea00;
+    padding: 18px;
+    margin: 25px auto;
+    border-radius: 5px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    text-decoration: none;
+}
+.title:hover{
+    opacity: 0.5;
+    transition: all 1s ease-out;
+}
+.p{
+    margin: 0px auto;
+    padding: 250px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 25px;
+
+}
+.p2{
+    margin: 0px auto;
+    padding: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 25px;
+}
+.table{
+    width:100%;;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.table, .table th, .table td{
+    border: 2px solid rgb(255, 238, 0);
+}
+.table th, .table td{
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 8px black;
+}
+.table th{
+    font-size: 30px;
+}
+.table td{
+    font-size: 20px;
+}
+.footer{
+    color: white;
+    display: grid;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 30px #fff700;
+    box-sizing: border-box;
+}
+.lista{
+    list-style-type: upper-latin;
+}
+.form{
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 145px;
+    background-color: #000000;
+    padding: 15px;
+    margin: 25px auto;
+    border-radius: 5px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+.nav_item{
+    text-decoration: none;
+}
+.container-icon{
+    width: 40px;
+    height: 30px;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.container-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+}
+.item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border-bottom-left-radius: 50px;
+    transition: all .5s;
+
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover img{
+transform: scale(1.1);
+}
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
